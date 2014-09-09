@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 public abstract class MonsterShopController {
 
     @Resource
-    private HttpServletRequest httpRequest;
+    protected HttpServletRequest httpRequest;
 
     protected String getCurrentCustomer() {
         return (String)httpRequest.getSession().getAttribute("customerName");
